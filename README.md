@@ -186,10 +186,6 @@ Each base image `i` saves as `img_{i:03d}_orig.png` and its `j`‑th augmentatio
 
 ---
 
-## 📜 License
-Specify your license here (e.g., MIT). Add a `LICENSE` file at the repo root.
-
----
 
 ## 🙌 Acknowledgments
 - Built with OpenCV and PIL; inspired by common data augmentation recipes used in modern CV pipelines.
