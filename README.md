@@ -36,12 +36,6 @@ vision-augment \
   --output generated_dataset
 ```
 
-The original filename remains a compatible launcher:
-
-```bash
-python synthetic_image_augmentation.py --sources 10 --variants 4
-```
-
 ## Output layout
 
 ```text
