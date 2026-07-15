@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-augmentation"
+version = "1.0.0"
+description = "Deterministic image augmentation and synthetic segmentation dataset generation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "opencv-python-headless>=4.8", "Pillow>=10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+vision-augment = "vision_augmentation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vision_augmentation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
